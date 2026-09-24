@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8F7F4;
+  --bg-dark: #0D0D0D;
+  --color-primary: #111111; /* Haute Couture Onyx Black */
+  --color-primary-hover: #000000;
+  --color-accent: #C5A059; /* YSL Signature Champagne Gold */
+  --color-accent-hover: #D8B26E;
+  --color-accent-light: #FBF7EE;
+  --color-accent-dark: #9A7736;
+  --color-burgundy: #7A1C2E; /* Couture Berry */
+  --text-dark: #111111;
+  --text-muted: #666666;
+  --text-light: #999999;
+  --border-light: #EAE6DE;
+  --border-dark: #111111;
+  --border-gold: #C5A059;
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.04);
+  --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.07);
+  --shadow-luxury: 0 20px 50px rgba(0, 0, 0, 0.12);
+  --radius-sm: 0px; /* Crisp high-fashion edges */
+  --radius-md: 2px;
+  --transition-fast: 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-smooth: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  --container-max: 1320px;
+}
+
+/* Base resets & utilities */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', 'Inter', -apple-system, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-fast);
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  transition: var(--transition-fast);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 28px;
+}
